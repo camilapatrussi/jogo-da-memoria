@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Memória Animal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header>
+            <h1>🐾 Memória Animal</h1>
+            <p>Desafie seu amigo e encontre os pares!</p>
+        </header>
+
+        <section class="jogadores">
+
+            <div class="jogador ativo" id="jogador1">
+                <h2>🧑 Jogador 1</h2>
+                <input type="text" id="nome1" placeholder="Nome do jogador 1">
+                <strong id="pontos1">0 pontos</strong>
+            </div>
+
+            <div class="jogador" id="jogador2">
+                <h2>🧑 Jogador 2</h2>
+                <input type="text" id="nome2" placeholder="Nome do jogador 2">
+                <strong id="pontos2">0 pontos</strong>
+            </div>
+
+        </section>
+
+        <h3 id="vez">Vez do Jogador 1</h3>
+
+        <section class="configuracoes">
+
+            <label for="dificuldade">Dificuldade:</label>
+
+            <select id="dificuldade">
+                <option value="facil">Fácil</option>
+                <option value="medio" selected>Médio</option>
+                <option value="dificil">Difícil</option>
+            </select>
+
+        </section>
+
+        <section class="informacoes">
+
+            <div class="info">
+                <span>Tempo</span>
+                <strong id="tempo">00:00</strong>
+            </div>
+
+            <div class="info">
+                <span>Tentativas</span>
+                <strong id="tentativas">0</strong>
+            </div>
+
+            <div class="info">
+                <span>Pares encontrados</span>
+                <strong id="pares">0/8</strong>
+            </div>
+
+        </section>
+
+        <section id="tabuleiro" class="tabuleiro"></section>
+
+        <button id="btnReiniciar" class="btn-reiniciar">
+            🔄 Novo jogo
+        </button>
+
+        <section id="resultado" class="resultado escondido">
+
+            <h2 id="mensagemVitoria">🏆 Fim de jogo!</h2>
+
+            <p id="detalhesResultado"></p>
+
+            <button id="btnJogarNovamente">
+                Jogar novamente
+            </button>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
